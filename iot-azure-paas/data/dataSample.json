@@ -1,0 +1,30 @@
+{
+  "$schema":"",
+  "deviceId": "",
+  "recordDate": "",
+  "transmissionDate": "",
+  "messageType":"",
+  "data":
+  {
+    "temperature":"",
+    "faceRecognized":"",
+    "faceId":"",
+    "wearingMask":"",
+    "wearingGloves":"",
+    "ambientTemperature":"",
+    "ambientHumidity":"",
+    "ambientPressure":"",
+    "surroundingPeople":
+    [
+      {
+        "faceId":""
+      },
+      {
+        "faceId":""
+      },
+      {
+        "faceId":""
+      }
+    ]
+  }
+}
