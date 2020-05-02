@@ -1,0 +1,210 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "EnqueuedTimeUtc",
+        "Properties",
+        "SystemProperties",
+        "Body"
+    ],
+    "properties": {
+        "EnqueuedTimeUtc": {
+            "$id": "#/properties/EnqueuedTimeUtc",
+            "type": "string",
+            "title": "The Enqueuedtimeutc Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-05-02T21:01:08.1080000Z"
+            ]
+        },
+        "Properties": {
+            "$id": "#/properties/Properties",
+            "type": "object",
+            "title": "The Properties Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "productId": "ReButton"
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "productId"
+            ],
+            "properties": {
+                "productId": {
+                    "$id": "#/properties/Properties/properties/productId",
+                    "type": "string",
+                    "title": "The Productid Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "ReButton"
+                    ]
+                }
+            }
+        },
+        "SystemProperties": {
+            "$id": "#/properties/SystemProperties",
+            "type": "object",
+            "title": "The Systemproperties Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "connectionDeviceId": "buttonDevOpsBuzzer1",
+                    "contentType": "application/json",
+                    "connectionDeviceGenerationId": "637174884786996293",
+                    "contentEncoding": "utf-8",
+                    "enqueuedTime": "2020-05-02T21:01:08.1080000Z",
+                    "connectionAuthMethod": "{\"scope\":\"device\",\"type\":\"sas\",\"issuer\":\"iothub\",\"acceptingIpFilterRule\":null}"
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "connectionDeviceId",
+                "connectionAuthMethod",
+                "connectionDeviceGenerationId",
+                "contentType",
+                "contentEncoding",
+                "enqueuedTime"
+            ],
+            "properties": {
+                "connectionDeviceId": {
+                    "$id": "#/properties/SystemProperties/properties/connectionDeviceId",
+                    "type": "string",
+                    "title": "The Connectiondeviceid Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "buttonDevOpsBuzzer1"
+                    ]
+                },
+                "connectionAuthMethod": {
+                    "$id": "#/properties/SystemProperties/properties/connectionAuthMethod",
+                    "type": "string",
+                    "title": "The Connectionauthmethod Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "{\"scope\":\"device\",\"type\":\"sas\",\"issuer\":\"iothub\",\"acceptingIpFilterRule\":null}"
+                    ]
+                },
+                "connectionDeviceGenerationId": {
+                    "$id": "#/properties/SystemProperties/properties/connectionDeviceGenerationId",
+                    "type": "string",
+                    "title": "The Connectiondevicegenerationid Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "637174884786996293"
+                    ]
+                },
+                "contentType": {
+                    "$id": "#/properties/SystemProperties/properties/contentType",
+                    "type": "string",
+                    "title": "The Contenttype Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "application/json"
+                    ]
+                },
+                "contentEncoding": {
+                    "$id": "#/properties/SystemProperties/properties/contentEncoding",
+                    "type": "string",
+                    "title": "The Contentencoding Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "utf-8"
+                    ]
+                },
+                "enqueuedTime": {
+                    "$id": "#/properties/SystemProperties/properties/enqueuedTime",
+                    "type": "string",
+                    "title": "The Enqueuedtime Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2020-05-02T21:01:08.1080000Z"
+                    ]
+                }
+            }
+        },
+        "Body": {
+            "$id": "#/properties/Body",
+            "type": "object",
+            "title": "The Body Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "singleClick": "Single click",
+                    "message": "Single click",
+                    "actionNum": "1",
+                    "actionCount": 42.0
+                }
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "actionNum": {
+                    "$id": "#/properties/Body/properties/actionNum",
+                    "type": "string",
+                    "title": "The Actionnum Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "1"
+                    ]
+                },
+                "message": {
+                    "$id": "#/properties/Body/properties/message",
+                    "type": "string",
+                    "title": "The Message Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Single click"
+                    ]
+                },
+                "singleClick": {
+                    "$id": "#/properties/Body/properties/singleClick",
+                    "type": "string",
+                    "title": "The Singleclick Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Single click"
+                    ]
+                },
+                "actionCount": {
+                    "$id": "#/properties/Body/properties/actionCount",
+                    "type": "integer",
+                    "title": "The Actioncount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        42.0
+                    ]
+                },
+                "batteryVoltage": {
+                    "$id": "#/properties/Body/properties/batteryVoltage",
+                    "type": "number",
+                    "title": "The Actioncount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        42.0
+                    ]
+                }
+            }
+        }
+    }
+}
