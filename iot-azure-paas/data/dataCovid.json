@@ -1,0 +1,39 @@
+{
+  "$schema":"../schemas/dataSchemaCovid.json",
+  "deviceId": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+  "recordDate": "2020-01-01T00:00:00z",
+  "transmissionDate": "2020-01-01T00:00:00z",
+  "age": 27,
+  "gender": "female",
+  "symptoms": {
+    "breathingIssues": true,
+    "temperature": true,
+    "muscularPain": true,
+    "cough": false,
+    "smellLoss": false,
+    "tasteLoss": true,
+    "headaches": true,
+    "improvingComparedToPreviousReport": 169.0,
+    "breathingIssuesLevel": 4,
+    "breathingIssuesDescription": "ABCDEFGHIJ",
+    "temperatureValue": 835.25,
+    "temperatureDescription": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "muscularPainLevel": 1,
+    "muscularPainDescription": "ABCDEFGHIJ",
+    "coughLevel": 2,
+    "coughDescription": "ABCDE",
+    "smellLossDescription": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "tasteLossDescription": "ABCDEFGHIJKLMNO",
+    "headachesDescription": "ABCDEFGHIJKLMNOPQRSTU",
+    "improving": true,
+    "other": "ABCDEFGHIJKLMNOPQRST"
+  },
+  "environment": {
+    "housing": "room",
+    "transportation": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+    "location": 634,
+    "socialDistance": 2,
+    "city": "ABCDE",
+    "country": "ABCDEFGHIJKLMNOPQRSTU"
+  }
+}
