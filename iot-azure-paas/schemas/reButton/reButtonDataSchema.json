@@ -118,55 +118,8 @@
                 }
             }
         },
-        "Body": {
-            "$id": "#/properties/Body",
-            "type": "object",
-            "default": {},
-            "examples": [
-                {
-                    "singleClick": "Single click",
-                    "message": "Single click",
-                    "actionNum": "1",
-                    "actionCount": 42.0
-                }
-            ],
-            "additionalProperties": true,
-            "properties": {
-                "actionNum": {
-                    "$id": "#/properties/Body/properties/actionNum",
-                    "type": "int",
-                    "enum":[1,2,3,10,11],
-                    "default": "",
-                    "examples": [
-                        1
-                    ]
-                },
-                "message": {
-                    "$id": "#/properties/Body/properties/message",
-                    "type": "string",
-                    "enum": ["Single click", "Double click", "Triple click", "Mong press", "Super long press"],
-                    "default": "",
-                    "examples": [
-                        "Single click"
-                    ]
-                },
-                "actionCount": {
-                    "$id": "#/properties/Body/properties/actionCount",
-                    "type": "integer",
-                    "default": 0,
-                    "examples": [
-                        42.0
-                    ]
-                },                
-                "batteryVoltage": {
-                    "$id": "#/properties/Body/properties/batteryVoltage",
-                    "type": "number",
-                    "default": 0,
-                    "examples": [
-                        2.7894
-                    ]
-                }
-            }
+        "Body": { 
+            "$ref": "#/reButtonBodySchema.json"
         }
     }
 }
