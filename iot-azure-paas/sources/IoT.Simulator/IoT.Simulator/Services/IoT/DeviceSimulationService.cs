@@ -1,17 +1,18 @@
-﻿using IoT.Simulator.Extensions;
+﻿using System;
+using System.Text;
+using System.Threading.Tasks;
+
+using IoT.Simulator.Extensions;
 using IoT.Simulator.Settings;
 using IoT.Simulator.Tools;
+
 using Microsoft.Azure.Devices.Client;
 using Microsoft.Azure.Devices.Shared;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IoT.Simulator.Services
 {
@@ -164,7 +165,7 @@ namespace IoT.Simulator.Services
                     await Task.Delay(_telemetryInterval * 1000);
                 }
             }
-        }       
+        }
         #endregion
 
         #region C2D
@@ -286,7 +287,7 @@ namespace IoT.Simulator.Services
             string result = "{\"result\":\"Executed direct method: " + methodRequest.Name + "\"}";
             return Task.FromResult(new MethodResponse(Encoding.UTF8.GetBytes(result), 200));
         }
-        
+
         private Task<MethodResponse> Reboot(MethodRequest methodRequest, object userContext)
         {
             // In a production device, you would trigger a reboot scheduled to start after this method returns.

@@ -1,8 +1,11 @@
-﻿using IoT.Simulator.Extensions;
+﻿using System;
+
+using IoT.Simulator.Extensions;
+
 using Microsoft.Extensions.Logging;
+
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
 
 namespace IoT.Simulator.Tools
 {

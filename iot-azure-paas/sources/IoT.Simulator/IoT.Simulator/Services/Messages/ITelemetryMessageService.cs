@@ -2,7 +2,7 @@
 
 namespace IoT.Simulator.Services
 {
-    public interface ITelemetryMessageService 
+    public interface ITelemetryMessageService
     {
         Task<string> GetMessageAsync();
     }

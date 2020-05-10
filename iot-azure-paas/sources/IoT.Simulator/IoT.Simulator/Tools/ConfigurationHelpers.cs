@@ -1,7 +1,8 @@
-﻿using IoT.Simulator.Exceptions;
-using System;
+﻿using System;
 using System.IO;
 using System.Text;
+
+using IoT.Simulator.Exceptions;
 
 namespace IoT.Simulator.Tools
 {
@@ -20,7 +21,7 @@ namespace IoT.Simulator.Tools
 
             var devicesettings = $"devicesettings.{environment}.json";
             if (!File.Exists(devicesettings))
-                sb.AppendLine($"{devicesettings} not found.");            
+                sb.AppendLine($"{devicesettings} not found.");
 
             if (sb.Length > 0)
                 throw new MissingEnvironmentConfigurationFileException(sb.ToString());

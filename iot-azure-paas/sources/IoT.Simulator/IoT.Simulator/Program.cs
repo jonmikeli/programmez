@@ -1,25 +1,20 @@
-﻿using IoT.Simulator.Exceptions;
+﻿using System;
+using System.IO;
+using System.Linq;
+
+using IoT.Simulator.Exceptions;
 using IoT.Simulator.Services;
 using IoT.Simulator.Settings;
 using IoT.Simulator.Tools;
-using Microsoft.Azure.Devices.Client;
+
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using System;
-using System.IO;
-using System.Linq;
 
 namespace IoT.Simulator
 {
     class Program
     {
-        private static DeviceClient _deviceClient;
-
-        // The device connection string to authenticate the device with your IoT hub.
-        // Using the Azure CLI:
-        // az iot hub device-identity show-connection-string --hub-name {YourIoTHubName} --device-id MyDotnetDevice --output table
-        private static string _iotHubConnectionString;
         private static string _environmentName;
 
         public static IConfiguration Configuration { get; set; }
@@ -82,8 +77,8 @@ namespace IoT.Simulator
                     throw new ArgumentException("No device simulation settings have been configured.");
 
                 if (deviceSettings.SimulationSettings.EnableDevice)
-                {                 
-                    RegisterMessagingServices(services);                 
+                {
+                    RegisterMessagingServices(services);
                     RegisterDeviceSimulators(services);
                 }
 

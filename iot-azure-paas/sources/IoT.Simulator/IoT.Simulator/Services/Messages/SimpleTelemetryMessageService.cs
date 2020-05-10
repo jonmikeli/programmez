@@ -1,9 +1,8 @@
-﻿using IoT.Simulator.Extensions;
-using IoT.Simulator.Tools;
-using Microsoft.Extensions.Logging;
-using System;
+﻿using System;
 using System.IO;
 using System.Threading.Tasks;
+
+using Microsoft.Extensions.Logging;
 
 namespace IoT.Simulator.Services
 {
@@ -29,6 +28,6 @@ namespace IoT.Simulator.Services
                 throw new ArgumentNullException(nameof(messageString), "DATA: The message to send is empty or not found.");
 
             return messageString;
-        }       
+        }
     }
 }
