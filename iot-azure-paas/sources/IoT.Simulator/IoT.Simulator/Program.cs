@@ -61,7 +61,7 @@ namespace IoT.Simulator
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine(ex.Message);
                     Console.ResetColor();
-                    Console.WriteLine("Execution will continue with default settings in appsettings.json, devicesettings.json and modulessettings.json.");
+                    Console.WriteLine("Execution will continue with default settings in appsettings.json and devicesettings.json.");
                 }
 
                 builder.AddJsonFile($"appsettings.{_environmentName}.json", optional: true, reloadOnChange: true);

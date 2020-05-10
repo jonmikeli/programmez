@@ -60,38 +60,6 @@ namespace IoT.Simulator.Tools
             }
             else return null;
         }
-
-        internal static string UpdateIds(string jsonMessage, string deviceId, string moduleId)
-        {
-            if (string.IsNullOrEmpty(jsonMessage))
-                throw new ArgumentNullException(nameof(jsonMessage));
-
-            if (string.IsNullOrEmpty(deviceId))
-                throw new ArgumentNullException(nameof(deviceId));
-
-            JObject jobject = JObject.Parse(jsonMessage);
-
-            if (jobject != null)
-            {
-                JToken jDeviceId;
-                if (jobject.TryGetValue("deviceId", out jDeviceId))
-                {
-                    jobject["deviceId"] = JToken.FromObject(deviceId);
-                }
-
-                if (!string.IsNullOrEmpty(moduleId))
-                {
-                    JToken jModuleId;
-                    if (jobject.TryGetValue("moduleId", out jModuleId))
-                    {
-                        jobject["moduleId"] = JToken.FromObject(moduleId);
-                    }
-                }
-
-                return JsonConvert.SerializeObject(jobject, Formatting.Indented);
-            }
-            else return null;
-        }
         #endregion
     }
 }
