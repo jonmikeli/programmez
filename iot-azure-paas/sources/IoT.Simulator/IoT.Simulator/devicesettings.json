@@ -1,5 +1,5 @@
 {
-  "connectionString": "HostName=cu-iots-iot-iothub-dev.azure-devices.net;DeviceId=device1;SharedAccessKey=sKE3FqT2+u0Y7zd1kBVWd48RNc8c3WJck6g3/RXnNrc=",
+  "connectionString": "",
   "simulationSettings": {
     "enableDevice": true,
     "enableTelemetryMessages": true,
