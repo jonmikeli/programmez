@@ -132,7 +132,7 @@ namespace IoT.Simulator.Services
 
             string messageString = string.Empty;
 
-            using (_logger.BeginScope($"{logPrefix}::{DateTime.Now}::{_deviceSettings.ArtifactId}::MEASURED DATA"))
+            using (_logger.BeginScope($"{logPrefix}::{DateTime.Now}::{_deviceSettings.ArtifactId}::DATA"))
             {
                 while (true)
                 {
