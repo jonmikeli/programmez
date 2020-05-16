@@ -34,6 +34,9 @@
     <None Update="devicesettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Messages\doubleClick.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Messages\data.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
