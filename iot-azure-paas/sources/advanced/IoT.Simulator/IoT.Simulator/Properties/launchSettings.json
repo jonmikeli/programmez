@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "IoT.Simulator": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
