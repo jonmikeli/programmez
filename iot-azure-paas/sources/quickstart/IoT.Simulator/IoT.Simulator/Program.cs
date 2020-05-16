@@ -15,28 +15,28 @@ namespace IoT.Simulator
 
             try
             {
+                //schema according to official documentation
+                var reButtonAction = new
+                {
+                    actionNum = "1",
+                    message = "Single click",
+                    singeClick = "Single click",
+                    batteryVoltage = 2.8
+                };
+
+                string jsonData = JsonSerializer.Serialize(reButtonAction);
+
+                var message = new Message(Encoding.UTF8.GetBytes(jsonData));
+
+                //metadata to define the message type
+                message.Properties.Add("messageType", "data");
+
+                message.ContentType = "application/json";
+                message.ContentEncoding = "utf-8";
+
+
                 using (DeviceClient deviceClient = DeviceClient.CreateFromConnectionString("TO BE REPLACED"))
                 {
-
-                    //schema according to official documentation
-                    var reButtonAction = new
-                    {
-                        actionNum = "1",
-                        message = "Single click",
-                        singeClick = "Single click",
-                        batteryVoltage = 2.8
-                    };
-
-                    string jsonData = JsonSerializer.Serialize(reButtonAction);
-
-                    var message = new Message(Encoding.UTF8.GetBytes(jsonData));
-
-                    //metadata to define the message type
-                    message.Properties.Add("messageType", "data");
-
-                    message.ContentType = "application/json";
-                    message.ContentEncoding = "utf-8";
-
                     await deviceClient.SendEventAsync(message);
 
                     Console.WriteLine("Message envoyé");
