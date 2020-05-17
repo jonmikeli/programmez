@@ -1,5 +1,6 @@
 {
+  "$schema": "https://cuiotsiotstoragehubdev.blob.core.windows.net/schemas/rebutton/v1/reButtonBodySchema.json",
   "actionNum": "11",
-  "message": "Super Long press",
+  "message": "Super long press",
   "batteryVoltage": 2.808425
 }

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://cuiotsiotstoragehubdev.blob.core.windows.net/schemas/rebutton/v1/reButtonBodySchema.json",
   "actionNum": "3",
   "message": "Triple click",
   "batteryVoltage": 2.808425
