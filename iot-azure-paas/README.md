@@ -5,3 +5,6 @@ Types des resources disponibles:
  - schémas JSON
  - exemples de données IoT
  - code sources
+
+Liens articles:
+TODO
