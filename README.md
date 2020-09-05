@@ -1,3 +1,3 @@
 # Programmez! - Contenus
 
-Repository contenant différents contenus liées aux publications de différents articles.
+Repository contenant certains des contenus liés aux publications de différents articles.
