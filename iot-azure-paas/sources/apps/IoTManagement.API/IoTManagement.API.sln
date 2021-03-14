@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.API", "1.API", "{33DA4669-4B92-4A6D-9CB5-7B7BA72E3A05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTManagement.API.API", "IoTManagement.API\IoTManagement.API.API\IoTManagement.API.API.csproj", "{BFB2C246-C334-44C3-B8CE-1AD7ABDD2519}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTManagement.API.API.Common", "IoTManagement.API\IoTManagement.API.API.Common\IoTManagement.API.API.Common.csproj", "{7E2FE319-F8F2-4B8F-A304-6E5725E19E1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTManagement.API.API.DataContracts", "IoTManagement.API\IoTManagement.API.API.DataContracts\IoTManagement.API.API.DataContracts.csproj", "{E465B499-C3E5-43E4-8C32-1FB58C1BCE7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Tests", "00.Tests", "{8CEE7EC3-044C-4846-97A3-00E7D85BC1D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTManagement.API.API.Tests.Controllers", "IoTManagement.API\IoTManagement.API.API.Tests.Controllers\IoTManagement.API.API.Tests.Controllers.csproj", "{08458590-44EE-4938-895E-141AE42651F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTManagement.API.API.Tests.REST", "IoTManagement.API\IoTManagement.API.API.Tests.REST\IoTManagement.API.API.Tests.REST.csproj", "{CBBA9390-2887-47A8-8496-B916CB89C56F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Common", "01.Common", "{F9B50D16-43AA-40A1-AAD5-5E9321A6C2C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTManagement.API.IoC.Configuration", "IoTManagement.API\IoTManagement.API.IoC.Configuration\IoTManagement.API.IoC.Configuration.csproj", "{64C79178-4E05-49FA-9701-8B5D40DD4035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTManagement.API.Tools", "IoTManagement.API\IoTManagement.API.Tools\IoTManagement.API.Tools.csproj", "{7D2A18A4-DEE8-404E-9E33-D99464168C99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Services", "2.Services", "{AC396A2A-7B94-4C3C-A36B-5B31AC9F868E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTManagement.API.Services", "IoTManagement.API\IoTManagement.API.Services\IoTManagement.API.Services.csproj", "{76D60424-56B5-4B27-8A6B-30985ADE8149}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Repositories", "3.Repositories", "{95A341F2-4886-4ADB-B7E7-81659BD171C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFB2C246-C334-44C3-B8CE-1AD7ABDD2519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB2C246-C334-44C3-B8CE-1AD7ABDD2519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB2C246-C334-44C3-B8CE-1AD7ABDD2519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB2C246-C334-44C3-B8CE-1AD7ABDD2519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E2FE319-F8F2-4B8F-A304-6E5725E19E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E2FE319-F8F2-4B8F-A304-6E5725E19E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E2FE319-F8F2-4B8F-A304-6E5725E19E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E2FE319-F8F2-4B8F-A304-6E5725E19E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E465B499-C3E5-43E4-8C32-1FB58C1BCE7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E465B499-C3E5-43E4-8C32-1FB58C1BCE7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E465B499-C3E5-43E4-8C32-1FB58C1BCE7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E465B499-C3E5-43E4-8C32-1FB58C1BCE7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08458590-44EE-4938-895E-141AE42651F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08458590-44EE-4938-895E-141AE42651F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08458590-44EE-4938-895E-141AE42651F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08458590-44EE-4938-895E-141AE42651F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBBA9390-2887-47A8-8496-B916CB89C56F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBBA9390-2887-47A8-8496-B916CB89C56F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBBA9390-2887-47A8-8496-B916CB89C56F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBBA9390-2887-47A8-8496-B916CB89C56F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64C79178-4E05-49FA-9701-8B5D40DD4035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C79178-4E05-49FA-9701-8B5D40DD4035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C79178-4E05-49FA-9701-8B5D40DD4035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C79178-4E05-49FA-9701-8B5D40DD4035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D2A18A4-DEE8-404E-9E33-D99464168C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D2A18A4-DEE8-404E-9E33-D99464168C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D2A18A4-DEE8-404E-9E33-D99464168C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D2A18A4-DEE8-404E-9E33-D99464168C99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D60424-56B5-4B27-8A6B-30985ADE8149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D60424-56B5-4B27-8A6B-30985ADE8149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D60424-56B5-4B27-8A6B-30985ADE8149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D60424-56B5-4B27-8A6B-30985ADE8149}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BFB2C246-C334-44C3-B8CE-1AD7ABDD2519} = {33DA4669-4B92-4A6D-9CB5-7B7BA72E3A05}
+		{7E2FE319-F8F2-4B8F-A304-6E5725E19E1B} = {33DA4669-4B92-4A6D-9CB5-7B7BA72E3A05}
+		{E465B499-C3E5-43E4-8C32-1FB58C1BCE7F} = {33DA4669-4B92-4A6D-9CB5-7B7BA72E3A05}
+		{08458590-44EE-4938-895E-141AE42651F9} = {8CEE7EC3-044C-4846-97A3-00E7D85BC1D0}
+		{CBBA9390-2887-47A8-8496-B916CB89C56F} = {8CEE7EC3-044C-4846-97A3-00E7D85BC1D0}
+		{64C79178-4E05-49FA-9701-8B5D40DD4035} = {F9B50D16-43AA-40A1-AAD5-5E9321A6C2C3}
+		{7D2A18A4-DEE8-404E-9E33-D99464168C99} = {F9B50D16-43AA-40A1-AAD5-5E9321A6C2C3}
+		{76D60424-56B5-4B27-8A6B-30985ADE8149} = {AC396A2A-7B94-4C3C-A36B-5B31AC9F868E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6433F13-954F-45C5-A308-46F742CE49B3}
+	EndGlobalSection
+EndGlobal

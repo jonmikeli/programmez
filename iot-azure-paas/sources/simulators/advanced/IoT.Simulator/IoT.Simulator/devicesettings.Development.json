@@ -3,7 +3,7 @@
   "simulationSettings": {
     "enableDevice": true,
     "enableTelemetryMessages": true,
-    "TelemetryTimeInterval": 30,
+    "TelemetryTimeInterval": 10,
     "enableC2DDirectMethods": true,
     "enableC2DMessages": true,
     "enableTwinPropertiesDesiredChangesNotifications": true

@@ -1,0 +1,1 @@
+﻿https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference#folder-structure
